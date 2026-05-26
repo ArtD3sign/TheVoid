@@ -7,20 +7,19 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(34, 52%, 54%);
-  --first-color-light: hsl(34, 52%, 64%);
-  --first-color-lighten: hsl(34, 52%, 68%);
-  --black-color: hsl(0, 0%, 4%);
+  --first-color: hsl(34, 0%, 0%);
+  --first-color-light: hsl(0, 0%, 52%);
+  --first-color-lighten: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 100%);
 
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+  /*.5rem = 8px | 1rem = 16px ...*/ 
   --body-font: "Montserrat", sans-serif;
   --second-font: "Smooch", cursive;
   --biggest-font-size: 6rem;
   --h3-font-size: 1rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
-
   /*========== Font weight ==========*/
   --font-regular: 400;
   --font-semi-bold: 600;
@@ -36,7 +35,7 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
+    --small-font-size: .875rem;  
   }
 }
 
@@ -67,6 +66,38 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
+/* ========================= */
+/* FLOTANTE */
+/* ========================= */
+.boton-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366; /* Color verde típico de WhatsApp, cámbialo a tu gusto */
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Efecto al pasar el mouse por encima */
+.boton-flotante:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {

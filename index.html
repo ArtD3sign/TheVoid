@@ -1,339 +1,395 @@
+
+<!-- index.html -->
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VOID — Streetwear Premium</title>
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="https://github.com/ArtD3sign/AqpGarage/blob/main/favicon.png?raw=true" type="image/x-icon">
+  <!-- Swiper -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css">
+  <!-- Remix Icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
 
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.0/swiper-bundle.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="styles.css">
+  <!-- ========================= -->
+  <!-- NAVBAR -->
+  <!-- ========================= -->
 
-      <title>AQP Garage</title>
-   </head>
-   <body>
-      
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo"><img src="logo.png" alt=""></a>
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="VOID Logo">
+    </div>
 
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="#" class="nav__link">Home</a>
-                  </li>
+    <nav class="nav-links">
+      <a href="#">Inicio</a>
+      <a href="#coleccion">Colección</a>
+      <a href="#identidad">El Vacio</a>
+      <a href="#">Contacto</a>
+    </nav>
 
-                  <li class="nav__item">
-                     <a href="#" class="nav__link">Men</a>
-                  </li>
+    <div class="menu-btn">
+      <i class="ri-menu-3-line"></i>
+    </div>
+  </header>
 
-                  <li class="nav__item">
-                     <a href="#" class="nav__link">Women</a>
-                  </li>
+  <!-- ========================= -->
+  <!-- HERO FULLSCREEN SLIDER -->
+  <!-- ========================= -->
 
-                  <li class="nav__item">
-                     <a href="#" class="nav__link">Bags</a>
-                  </li>
+  <section class="hero">
+ 
+    <div class="swiper heroSwiper">
 
-                  <li class="nav__item">
-                     <a href="#" class="nav__link">Community</a>
-                  </li>
-               </ul>
-               <!-- Close button -->
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
-               </div>
+      <div class="swiper-wrapper">
+
+        <!-- SLIDE 1 -->
+        <div class="swiper-slide slide slide1">
+
+          <div class="overlay"></div>
+
+          <div class="hero-content">
+
+            <span class="subtitle">DROP 2026</span>
+
+            <h1>
+              STREETWEAR<br>
+              PREMIUM
+            </h1>
+
+            <p>
+              Camisetas urbanas con diseños exclusivos,
+              calidad premium y esencia VOID.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#join" class="btn-primary">
+                Comprar Ahora
+              </a>
+
+              <a href="#" class="btn-secondary">
+                Ver Colección
+              </a>
             </div>
+          </div>
 
-            <div class="nav__actions">
-               <i class="ri-heart-3-line"></i>
-               <i class="ri-shopping-cart-line"></i>
-               <!-- Toggle button -->
-               <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-menu-line"></i> 
-               </div>
-            </div>      
+        </div>
 
-         </nav>
-      </header>
+        <!-- SLIDE 2 -->
+        <div class="swiper-slide slide slide2">
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home">
-            <div class="home__container container">
-               <div class="home__content">
-                  <div class="home__circle">
-                     <div class="home__subcircle"></div>
-                     <h1 class="home__title"><img src="https://raw.githubusercontent.com/ArtD3sign/ArtD3sign.github.io/refs/heads/main/aqp.png" alt=""></h1>
-                  </div>  
+          <div class="overlay"></div>
 
-                  <div class="home__swiper swiper">
-                     <div class="swiper-wrapper">
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/ArtD3sign.github.io/blob/main/clothing-1.png?raw=true" alt="image" class="home__img">
+          <div class="hero-content">
+            <span class="subtitle">LIMITED EDITION</span>
 
-                           <h2 class="home__product">Core Hoddie</h2>
-                           <h3 class="home__price">$125</h3>
-                        </article>
+            <h1>
+              ONE<br>
+              PIECE
+            </h1>
 
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/ArtD3sign.github.io/blob/main/clothing-2.png?raw=true" alt="image" class="home__img">
+            <p>
+              Diseños exclusivos para quienes
+              no siguen tendencias.
+            </p>
 
-                           <h2 class="home__product">Stylish Backpack</h2>
-                           <h3 class="home__price">$115</h3>
-                        </article>
-
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/ArtD3sign.github.io/blob/main/clothing-3.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Premiere Pants</h2>
-                           <h3 class="home__price">$125</h3>
-                        </article>
-
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/ArtD3sign.github.io/blob/main/clothing-4.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Black Shorts</h2>
-                           <h3 class="home__price">$75</h3>
-                        </article>
-
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/ArtD3sign.github.io/blob/main/clothing-5.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Cool T-Shirt</h2>
-                           <h3 class="home__price">$65</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/ArtD3sign.github.io/blob/main/clothing-6.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Cool T-Shirt</h2>
-                           <h3 class="home__price">$65</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/ArtD3sign.github.io/blob/main/clothing-7.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Cool T-Shirt</h2>
-                           <h3 class="home__price">$65</h3>
-                        </article>
-                         <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/ArtD3sign.github.io/blob/main/clothing-8.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Cool T-Shirt</h2>
-                           <h3 class="home__price">$65</h3>
-                        </article>
-                         <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-9.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-10.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-11.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                         <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-12.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-13.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-14.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-15.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-16.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-17.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                         <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-18.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-19.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-20.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-21.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-22.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-23.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-24.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-25.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-26.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-27.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                         <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-28.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-28.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-29.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-30.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-31.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-32.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-33.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>}
-                        <article class="home__article swiper-slide">
-                           <img src="https://github.com/ArtD3sign/AqpGarage/blob/main/clothing-34.png?raw=true" alt="image" class="home__img">
-
-                           <h2 class="home__product">Bob Marley Shirt</h2>
-                           <h3 class="home__price">S/50</h3>
-                        </article>
-                     </div>
-                  </div>
-                  <!-- Navigation buttons -->
-                 <div class="swiper-button-prev">
-                    <i class="ri-arrow-left-line"></i>
-                 </div>
-                 <div class="swiper-button-next">
-                    <i class="ri-arrow-right-line"></i>
-                 </div>
-               </div> 
-
-               <footer class="home__footer">
-                  <div class="home__languages">
-                     ES | EN
-                  </div>
-
-                  <div class="home__social">
-                     <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                        <i class="ri-facebook-circle-line"></i>
-                     </a>
-
-                     <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                        <i class="ri-instagram-line"></i>
-                     </a>
-
-                     <a href="https://www.tiktok.com/" target="_blank" class="home__social-link">
-                        <i class="ri-tiktok-fill"></i>
-                     </a>
-                  </div>
-               </footer>
+            <div class="hero-buttons">
+              <a href="#join" class="btn-primary">
+                Explorar
+              </a>
             </div>
-         </section>
-      </main>
+          </div>
 
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src="https://unpkg.com/scrollreveal"></script>
+        </div>
 
-      <!--=============== SWIPER JS ===============-->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.0/swiper-bundle.min.js"></script>
+        <!-- SLIDE 3 -->
+        <div class="swiper-slide slide slide3">
 
-      <!--=============== MAIN JS ===============-->
-      <script src="main.js"></script>
-   </body>
+          <div class="overlay"></div>
+
+          <div class="hero-content">
+            <span class="subtitle">NEW ARRIVAL</span>
+
+            <h1>
+              RE<br>GGAE
+            </h1>
+
+            <p>
+              Moda urbana con presencia,
+              actitud y autenticidad.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#join" class="btn-primary">
+                Ver Colección
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SLIDE 4 -->
+        <div class="swiper-slide slide slide4">
+
+          <div class="overlay"></div>
+
+          <div class="hero-content">
+            <span class="subtitle">LIMITED EDITION</span>
+
+            <h1>
+              DRAGON<br>
+              BALL
+            </h1>
+
+            <p>
+              Diseños exclusivos para quienes
+              no siguen tendencias.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#join" class="btn-primary">
+                Explorar
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+
+                <!-- SLIDE 5 -->
+        <div class="swiper-slide slide slide5">
+
+          <div class="overlay"></div>
+
+          <div class="hero-content">
+            <span class="subtitle">LIMITED EDITION</span>
+
+            <h1>
+              VW<br> 
+            </h1>
+
+            <p>
+              Moda urbana con presencia,
+              actitud y autenticidad.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#join" class="btn-primary">
+                Comprar Colección
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+                 <!-- SLIDE 6 -->
+        <div class="swiper-slide slide slide6">
+
+          <div class="overlay"></div>
+
+          <div class="hero-content">
+            <span class="subtitle">LIMITED EDITION</span>
+
+            <h1>
+              ENTRA<br>
+              AL VACIO
+            </h1>
+
+            <p>
+              Moda urbana con presencia,
+              actitud y autenticidad.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#join" class="btn-primary">
+                Comprar Drop
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- controls -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================= -->
+  <!-- FEATURED PRODUCTS -->
+  <!-- ========================= -->
+
+  <section class="featured">
+
+    <div id="coleccion" class="section-title">
+      <span>COLECCIONES DESTACADAS</span>
+      <h2>Urban Essentials</h2>
+    </div>
+
+    <div class="products-grid">
+
+      <div class="product-card">
+        <img src="0555.jpg" alt="">
+        <div class="product-info">
+          <h3>Reggae</h3>
+          <span>S/49.99</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="0111.jpeg" alt="">
+        <div class="product-info">
+          <h3>One Piece</h3>
+          <span>S/49.99</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+       <img src="0222.jpeg" alt="">
+        <div class="product-info">
+          <h3>Iron Maiden</h3>
+          <span>S/49.99</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="0333.jpeg" alt="">
+        <div class="product-info">
+          <h3>Dragon Ball</h3>
+          <span>S/49.99</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================= -->
+  <!-- BRAND SECTION -->
+  <!-- ========================= -->
+
+  <section class="brand-section">
+
+    <div id="identidad" class="brand-image">
+      <img src="model.jpg" alt="">
+    </div>
+
+    <div class="brand-text">
+      <span>VOID IDENTITY</span>
+
+      <h2>
+        No seguimos tendencias.
+        Creamos identidad.
+      </h2>
+
+      <p>
+        cultura urbana moderna, minimalismo, calidad premium
+        y actitud callejera en prendas exclusivas.
+      </p>
+
+      <a href="#join" class="btn-primary">
+        Conocer Más
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ========================= -->
+  <!-- BENEFITS -->
+  <!-- ========================= -->
+
+  <section class="benefits">
+
+    <div class="benefit-card">
+      <i class="ri-shirt-line"></i>
+      <h3>PoliHexagonal</h3>
+    </div>
+
+    <div class="benefit-card">
+      <i class="ri-truck-line"></i>
+      <h3>Envío Rápido</h3>
+    </div>
+
+    <div class="benefit-card">
+      <i class="ri-secure-payment-line"></i>
+      <h3>Pago Seguro</h3>
+    </div>
+
+    <div class="benefit-card">
+      <i class="ri-star-smile-line"></i>
+      <h3>Calidad Garantizada</h3>
+    </div>
+
+  </section>
+
+  <!-- ========================= -->
+  <!-- CTA -->
+  <!-- ========================= -->
+
+  <section id="join" class="cta">
+
+    <div class="cta-content">
+
+     <span>EL VACIO</span>
+
+      <h2>
+        JOIN THE VOID
+      </h2>
+
+      <p>
+        Sé parte de la nueva generación streetwear.
+      </p>
+
+      <a href="thevoid.html" class="btn-primary">
+        Entrar al Vacio
+      </a>
+
+ 
+     
+    </div>
+
+
+
+    
+
+  </section>
+
+
+  <!-- ========================= -->
+  <!-- FOOTER -->
+  <!-- ========================= -->
+
+  <footer>
+
+    <img src="logo.png" alt="VOID Logo">
+
+    <p>
+      © 2026 VOID — All Rights Reserved
+    </p>
+
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
 </html>
